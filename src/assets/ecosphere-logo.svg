@@ -1,0 +1,8 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" fill="#2e7d32" rx="20"/>
+  <circle cx="120" cy="100" r="50" fill="#43a047"/>
+  <circle cx="120" cy="100" r="35" fill="#66bb6a"/>
+  <circle cx="120" cy="100" r="20" fill="#81c784"/>
+  <text x="120" y="170" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="white" text-anchor="middle">EcoSphere</text>
+  <text x="120" y="195" font-family="Arial, sans-serif" font-size="14" fill="#c8e6c9" text-anchor="middle">Sustainability Intelligence</text>
+</svg>
