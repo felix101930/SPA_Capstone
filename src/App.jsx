@@ -33,7 +33,7 @@ export default function App() {
     return (
         <ThemeProvider theme={theme}>
             <CssBaseline />
-            <BrowserRouter basename="/ecosphere-landing">
+            <BrowserRouter basename="/SPA_Capstone">
                 <Routes>
                     <Route path="/" element={<LandingPage />} />
                     <Route path="/about" element={<AboutPage />} />
