@@ -2,6 +2,7 @@ import { Box, Container, Typography, Button, Grid, Paper, Avatar, Chip, useTheme
 import { TrendingUp, WaterDrop, Bolt, LocalFireDepartment, Analytics, Speed, LinkedIn, Close } from '@mui/icons-material';
 import { useState } from 'react';
 import ecosphereLogo from '../assets/logo.png';
+import demoVideo from '../assets/DemoVid.mp4';
 import felixPhoto from '../assets/team/Felix.png';
 import jessicaPhoto from '../assets/team/Jessica.jpg';
 import sanbirPhoto from '../assets/team/Sanbir.jpg';
@@ -82,18 +83,9 @@ export default function LandingPage() {
                     background: 'linear-gradient(135deg, #2d7a3e 0%, #3d8f4d 50%, #4da55e 100%)',
                     color: 'white',
                     pt: 12,
-                    pb: 16,
+                    pb: 8,
                     position: 'relative',
                     overflow: 'hidden',
-                    '&::before': {
-                        content: '""',
-                        position: 'absolute',
-                        top: 0,
-                        left: 0,
-                        right: 0,
-                        bottom: 0,
-                        background: 'radial-gradient(circle at 20% 50%, rgba(255,255,255,0.08) 0%, transparent 50%)',
-                    }
                 }}
             >
                 <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 1 }}>
@@ -130,6 +122,33 @@ export default function LandingPage() {
                             Real-time energy monitoring and carbon footprint tracking system for sustainable building management.
                             Empowering SAIT&apos;s Green Building Technology program with data-driven insights.
                         </Typography>
+                    </Box>
+
+                    {/* Video Player */}
+                    <Box
+                        sx={{
+                            maxWidth: 900,
+                            mx: 'auto',
+                            borderRadius: '16px',
+                            overflow: 'hidden',
+                            boxShadow: '0 20px 60px rgba(0,0,0,0.3)',
+                            border: '3px solid rgba(255,255,255,0.2)',
+                        }}
+                    >
+                        <video
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            style={{
+                                width: '100%',
+                                height: 'auto',
+                                display: 'block',
+                            }}
+                        >
+                            <source src={demoVideo} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
                     </Box>
                 </Container>
             </Box>
