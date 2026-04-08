@@ -251,26 +251,6 @@ export default function LandingPage() {
                         Explore our intuitive dashboard and powerful analytics tools
                     </Typography>
 
-                    {/* Video Placeholder */}
-                    <Paper
-                        elevation={0}
-                        sx={{
-                            borderRadius: '16px',
-                            overflow: 'hidden',
-                            mb: 4,
-                            border: '1px solid #e0e0e0',
-                            aspectRatio: '16/9',
-                            bgcolor: '#f5f5f5',
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center'
-                        }}
-                    >
-                        <Typography variant="h6" sx={{ color: '#999' }}>
-                            Demo Video Placeholder
-                        </Typography>
-                    </Paper>
-
                     {/* Screenshots Grid */}
                     <Grid container spacing={3}>
                         {screenshots.map((screenshot, index) => (
